@@ -1,0 +1,107 @@
+.side-Nav{
+    position: fixed;
+    width: 300px;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+}
+
+.side-Nav-left{
+    width: 240px;
+    display: flex;
+
+}
+.side-Nav-right{
+    width:60px;
+}
+.side-Nav-left ul li ,.social-icon i{
+    padding: 10px;
+}
+.pragraph-footer{
+    color: #999;
+}
+
+
+/* ----------------------- Inputs Style ----------------------- */
+input {
+    text-align: left;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }
+
+
+
+/* Layer style */
+.inner-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.layer{
+    position: absolute;
+    height:0%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.inner-image:hover .layer{
+    bottom: 0%;
+    height:100%;
+    opacity: 1;
+}
+.inner-image h2{
+    font-weight: normal;
+}
+
+.ContacUs-form-control{
+    box-shadow: 5px 5px 8px rgb(49, 49, 49);
+}
+
+#IngredientsSection{
+    width: 80%;
+    margin: auto;
+}
+.containerContact {
+    width: 70%;
+}
+
+.ingredient-p{
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+.details{
+    height: 300px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen {
+    
+}

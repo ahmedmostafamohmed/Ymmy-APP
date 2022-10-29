@@ -1,0 +1,266 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Yummy</title>
+</head>
+
+<body class="bg-black">
+
+    <!-- ------------------------ sideNav section ---------------- -->
+    <section id="sideNav">
+        <div class="side-Nav d-flex bg-black vh-100">
+            <!-- ------------------------ nav-links section ---------------- -->
+            <div class="side-Nav-left container flex-column justify-content-between pt-4 pb-5">
+                <ul class="text-white list-unstyled">
+                    <li><a href="#" class="searchLink cursor-pointer text-decoration-none text-white">Search</a></li>
+                    <li><a href="#" class="categoriesLink cursor-pointer text-decoration-none text-white">Categories</a>
+                    </li>
+                    <li><a href="#" class="areaLink cursor-pointer text-decoration-none text-white">Area</a></li>
+                    <li><a href="#"
+                            class="ingredientsLink cursor-pointer text-decoration-none text-white">Ingredients</a></li>
+                    <li class="contactLink cursor-pointer text-decoration-none text-white">Contact Us</li>
+                </ul>
+
+                <div class="side-Nav-right-footer ">
+                    <div class="pb-3 social-icon">
+                        <i class="fa fa-brands fa-facebook-f cursor-pointer"></i>
+                        <i class="fa fa-brands fa-twitter cursor-pointer"></i>
+                        <i class="fas fa-globe cursor-pointer"></i>
+                    </div>
+                    <div class="pragraph-footer">Copyright Â© 2022 Designed by Ah-med Mostafa All Rights Reserved.</div>
+                </div>
+            </div>
+
+
+            <!-- ------------------------ Toggle-nav-links section ---------------- -->
+            <div class="side-Nav-right bg-light text-center d-flex flex-column justify-content-between pt-4 pb-3">
+                <div class="text-center d-flex justify-content-center">
+                    <img src="images/logo.png" class="w-75" alt="">
+                </div>
+
+                <div>
+                    <i id="btn" class="fa fa-align-justify text-3xl cursor-pointer"></i>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <i class="fas fa-globe pb-2 cursor-pointer"></i>
+                    <i class="fas fa-share-alt cursor-pointer"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ------------------------ Home Section ---------------- -->
+    <section id="HomeSection">
+        <div class="container py-5">
+            <div class="container py-5 ">
+                <div id="demo" class="row row-cols-1 row-cols-md-4 g-4">
+
+                </div>
+
+            </div>
+        </div>
+         <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content bg-black text-white">
+        <div class="modal-header">
+          <button type="button" class="btn-close text-white bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-white">
+          <div class="row" id="maelDitels">
+            <div class="col-md-4 col-sm-12">
+                <img src="images/pexels-david-bartus-1710355.jpg" alt="">
+                <h3 >Name</h3>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <h2>Describtion</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, eaque! Ut porro reiciendis, odit aspernatur optio dolorum animi temporibus error excepturi, eos earum autem quo atque doloremque maxime ipsum mollitia!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <!-- ------------------------ Search Section ---------------- -->
+    <section id="SearchSection" class="d-none">
+        <div class="container py-5">
+            <div class="row g-4">
+
+                <div class="col-md-6 col-sm-12">
+                    <input id="Findmaels" type="text"
+                        class="form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                        placeholder="Search By Name..." aria-label="First name">
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <input id="FindmaelsFirstLetter" type="text"
+                        class="form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                        placeholder="Search By First Letter..." aria-label="Last name" maxlength="1">
+                </div>
+            </div>
+
+            <div class="container py-5">
+                <div id="demoSearch" class="row row-cols-1 row-cols-md-4 g-4">
+
+                </div>
+            </div>
+
+        </div>
+
+    <!-- Modal -->
+  <!-- <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content bg-black text-white">
+        <div class="modal-header">
+          <button type="button" class="btn-close text-white bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-white">
+          <div class="row" id="maelDitelsS">
+            <div class="col-md-4 col-sm-12">
+                <img src="images/pexels-david-bartus-1710355.jpg" alt="">
+                <h3 >Name</h3>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <h2>Describtion</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, eaque! Ut porro reiciendis, odit aspernatur optio dolorum animi temporibus error excepturi, eos earum autem quo atque doloremque maxime ipsum mollitia!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+    </section>
+
+    <!-- ------------------------ Categories Section ---------------- -->
+    <section id="CategoriesSection">
+        <div class="container py-5">
+            <div class="container py-5">
+                <div id="demoCategories" class="row row-cols-1 row-cols-md-4 g-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ Area Section ---------------- -->
+    <section id="AreaSection" class="py-5">
+        <div class="container py-5">
+            <div class="container py-5">
+                <div id="demoArea" class="row row-cols-1 row-cols-md-4 g-4">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ Ingredients Section ---------------- -->
+    <section id="IngredientsSection" class="py-5">
+        <div class="container py-5">
+            <div class="container py-5">
+                <div id="demoIngredients" class="row row-cols-1 row-cols-md-4 g-4">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ ContacUs Section ---------------- -->
+    <section id="ContacUsSection" class="py-5 d-none">
+        <div class="container py-5 d-flex justify-content-center">
+            <div class="containerContact py-5 text-center">
+
+                <div class="row g-3 ">
+                    <h3 class="text-center text-white mb-4">ContacUs...</h3>
+
+                    <div class="col-md-6 col-sm-1">
+                        <input type="text"
+                            class=" Contac-name ContacUs-form-control form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                            id="Contac-name" placeholder="First name" aria-label="Enter Your Name">
+
+                        <div class="d-none alert-name alert alert-danger mt-1 start-0 end-0" role="alert">
+                            Special Characters and Numbers not allowed
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-1">
+                        <input id="Contac-email" type="email"
+                            class="Contac-email ContacUs-form-control form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                            placeholder="Enter Email" aria-label="First name">
+
+                        <div class="d-none alert-email alert alert-danger mt-1 start-0 end-0" role="alert">
+                            Enter valid email. *Ex: xxx@yyy.zzz
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-1">
+                        <input id="Contac-phoneNumber" type="text"
+                            class="Contac-phoneNumber ContacUs-form-control form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                            placeholder="Enter Phone" aria-label="First name">
+
+                        <div class="d-none alert-number alert alert-danger mt-1 start-0 end-0" role="alert">
+                            Enter valid Phone Number
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-1">
+                        <input id="Contac-Age" type="text"
+                            class="Contac-Age ContacUs-form-control form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                            placeholder="Enter Age" aria-label="First name" maxlength="3">
+
+                        <div class="d-none alert-age alert alert-danger mt-1 start-0 end-0" role="alert">
+                            Enter valid Age 1:100 years
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-1">
+                        <input id="Contac-password" type="password"
+                            class="Contac-password ContacUs-form-control form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                            placeholder="Enter Password" aria-label="First name">
+
+                            <div class="d-none alert-password alert alert-danger mt-1 start-0 end-0" role="alert">
+                                Enter valid password *Minimum eight characters, at least one letter and one number:*
+                              </div>
+                    </div>
+                    <div class="col-md-6 col-sm-1">
+                        <input id="Contac-repassword" type="password"
+                            class="Contac-repassword ContacUs-form-control form-control bg-black border border-top-0 border-start-0 border-end-0 rounded-0"
+                            placeholder="Enter Password" aria-label="First name">
+
+                            <div class="d-none alert-repassword alert alert-danger mt-1 start-0 end-0" role="alert">
+                                Enter valid Repassword
+                              </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-danger mt-4" disabled>Submit</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
